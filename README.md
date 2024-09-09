@@ -31,3 +31,9 @@ Prima assicuratevi che la vostra pagina index.php (il vostro front-end) riesca a
     - index.php + server.php
     - dir "data" con *.json
     - dir "js" con script per vue application
+    - dir "css" per eventuale stile
+- Installazione tramite CDN:
+    - Bootstrap CSS
+    - AXIOS
+    - VueJS
+- Istanza di applicazione di Vue nello script.js
