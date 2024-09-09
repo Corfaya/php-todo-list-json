@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-12">
                     <ul class="list-unstyled">
-                        <!-- LIST HERE -->
+                        <li v-for="(l, i) in todoArray" :key="i"> {{l.name}}</li>
                     </ul>
                 </div>
             </div>
