@@ -11,6 +11,7 @@ createApp({
         getList(){
             axios.get(this.url).then((res) => {
                 console.log(res.data)
+                this.todoArray = res.data
             })
         }
     },

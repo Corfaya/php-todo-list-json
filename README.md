@@ -41,6 +41,7 @@ Prima assicuratevi che la vostra pagina index.php (il vostro front-end) riesca a
 - Nel file server.php
     - Recuperare i dati del json sotto forma di stringa, tramite il metodo file_get_contents()
     - Usare metodo json_decode() per trasformare la stringa in un array associativo
+    - Aggiungere intestazione content-type all'header HTTP da mandare al Client in formato json
 
 - Istanza di applicazione di Vue nello script.js
     - Nei data()

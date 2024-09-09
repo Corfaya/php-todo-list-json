@@ -1,6 +1,8 @@
 <?php
     $toDoList = file_get_contents("./data/todolist.json");
-    // var_dump($toDoList);
-    $toDoListJson = json_decode($toDoList);
-    var_dump($toDoListJson);
+    $toDoListJson = json_decode($toDoList, true);
+    // (perché in console?) var_dump($toDoListJson);
+
+    header("Content-type: application/json");
+    echo json_encode($toDoListJson)
 ?>
