@@ -37,3 +37,6 @@ Prima assicuratevi che la vostra pagina index.php (il vostro front-end) riesca a
     - AXIOS
     - VueJS
 - Istanza di applicazione di Vue nello script.js
+    - Nei data()
+        - Array vuoto
+        - Endpoint per la chiamata al server assegnato a una variabile
