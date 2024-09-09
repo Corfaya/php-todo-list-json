@@ -17,13 +17,13 @@ createApp({
         },
         addItem() {
             const data = {
-                id: this.todoArray.length + 1,
-                done: false,
-                name: this.todo
+                // id: this.todoArray.length + 1,
+                // done: false,
+                todo: this.todo
             }
-            axios.post(this.url, data, {headers: {"Content-type": "multipart/form-data"}}).then(() => {
-                this.todoArray.push(data)
-                //this.todo = ""
+            axios.post(this.url, data, {headers: {"Content-type": "multipart/form-data"}}).then((res) => {
+                this.todo = ""
+                this.todoArray = res.data
                 console.log(this.todoArray)
             })
         }
