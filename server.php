@@ -7,7 +7,7 @@
         $todo_element = $_POST["todo"];
         // array associativo per il nuovo elemento
         $itemToAdd = [
-            "id" => strlen($toDoListArr) + 1,
+            "id" => count($toDoListArr) + 1,
             "done" => false,
             "name" => $todo_element
         ];
