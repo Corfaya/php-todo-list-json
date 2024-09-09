@@ -32,11 +32,21 @@ Prima assicuratevi che la vostra pagina index.php (il vostro front-end) riesca a
     - dir "data" con *.json
     - dir "js" con script per vue application
     - dir "css" per eventuale stile
+
 - Installazione tramite CDN:
     - Bootstrap CSS
     - AXIOS
     - VueJS
+
+- Nel file server.php
+    - Recuperare i dati del json sotto forma di stringa, tramite il metodo file_get_contents()
+
 - Istanza di applicazione di Vue nello script.js
     - Nei data()
         - Array vuoto
         - Endpoint per la chiamata al server assegnato a una variabile
+    - Nei methods
+        - Effettuare richiesta GET tramite axios
+        - Mostrare in console
+    - Nel mounted()
+        - Richiamare la funzione

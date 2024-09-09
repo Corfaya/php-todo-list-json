@@ -8,6 +8,13 @@ createApp({
         }
     },
     methods: {
-
+        getList(){
+            axios.get(this.url).then((res) => {
+                console.log(res.data)
+            })
+        }
+    },
+    mounted() {
+        this.getList()
     }
 }).mount("#app")
