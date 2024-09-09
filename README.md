@@ -25,3 +25,9 @@ Prima assicuratevi che la vostra pagina index.php (il vostro front-end) riesca a
     { "id" : 4, "done": false, "name": "JavaScript" },
     { "id" : 5, "done": true, "name": "PHP" }
 ]
+
+# Flow
+- Creazione struttura repo:
+    - index.php + server.php
+    - dir "data" con *.json
+    - dir "js" con script per vue application
