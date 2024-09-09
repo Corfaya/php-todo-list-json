@@ -12,14 +12,20 @@
 <body>
     <div id="app">
         <div class="container">
-            <div class="row">
+            <div class="row gy-3">
                 <div class="col-12">
                     <h1 class="text-center">ToDo List (PHP)</h1>
                 </div>
                 <div class="col-12">
-                    <ul class="list-unstyled">
+                    <ul>
                         <li v-for="(l, i) in todoArray" :key="i"> {{l.name}}</li>
                     </ul>
+                </div>
+                <div class="col-6">
+                    <input class="form-control form-control-sm" type="text" name="todo" id="todo-item" placeholder="Aggiungi qualcosa..." v-model="todo">
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-sm btn-success" @click="addItem()">Aggiungi</button>
                 </div>
             </div>
         </div>

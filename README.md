@@ -38,6 +38,9 @@ Prima assicuratevi che la vostra pagina index.php (il vostro front-end) riesca a
     - AXIOS
     - VueJS
 
+- Nell'index.php
+    - Tag input di tipo text con v-model per la richiesta POST
+
 - Nel file server.php
     - Recuperare i dati del json sotto forma di stringa, tramite il metodo file_get_contents()
     - Usare metodo json_decode() per trasformare la stringa in un array associativo
@@ -47,8 +50,12 @@ Prima assicuratevi che la vostra pagina index.php (il vostro front-end) riesca a
     - Nei data()
         - Array vuoto
         - Endpoint per la chiamata al server assegnato a una variabile
+        - Variabile per il v-model
     - Nei methods
         - Effettuare richiesta GET tramite axios
-        - Mostrare in console
+            - Mostrare in console
+        - Creare oggetto data
+            - Effettuare richiesta POST tramite axios
+        
     - Nel mounted()
         - Richiamare la funzione
